@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cage cube technologies</title>
+    <link rel="stylesheet" href="custom.css"> <!-- ***css file link*** -->    
+	 <link rel="stylesheet" href="responsive.css"> 
+     <link rel="stylesheet" href="form css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   <!-- ***google font link*** -->
+    <script src="form script/script.js"></script>
+</head>
+<body>
+
+    <!-- ************ header html ****************** -->
+    <header>
+        <div class="container">
+            <img src="img/logo.png">
+        </div>
+    </header>
+
+<!-- *********** banner html ****************** -->
+    <section class="banner-cstm">
+        <div class="container">
+            <div class="banner-inr">
+                <div class="banner-left">
+                    <h2>HOST <span>QUICKBOOKS</span> ON OUR CLOUD DESKTOP</h2>
+                </div>
+                <div class="banner-right">
+                    
+                        <div class="form-heading">
+                        <h2>Registeration Form</h2>
+                        </div>
+                        <!-- Progress Form -->
+                        <form id="progress-form" class="p-4 progress-form" action="https://httpbin.org/post" lang="en" novalidate>
+                      
+                          <!-- Step Navigation -->
+                          <div class="d-flex align-items-start mb-3 sm:mb-5 progress-form__tabs" role="tablist">
+                            <button id="progress-form__tab-1" class="flex-1 px-0 pt-2 progress-form__tabs-item" type="button" role="tab" aria-controls="progress-form__panel-1" aria-selected="true">
+                              <span class="d-block step" aria-hidden="true">Step 1 <span class="sm:d-none">of 3</span></span>
+                              Details
+                            </button>
+                            <button id="progress-form__tab-2" class="flex-1 px-0 pt-2 progress-form__tabs-item" type="button" role="tab" aria-controls="progress-form__panel-2" aria-selected="false" tabindex="-1" aria-disabled="true">
+                              <span class="d-block step" aria-hidden="true">Step 2 <span class="sm:d-none">of 3</span></span>
+                              Address
+                            </button>
+                            <button id="progress-form__tab-3" class="flex-1 px-0 pt-2 progress-form__tabs-item" type="button" role="tab" aria-controls="progress-form__panel-3" aria-selected="false" tabindex="-1" aria-disabled="true">
+                              <span class="d-block step" aria-hidden="true">Step 3 <span class="sm:d-none">of 3</span></span>
+                             Payment
+                            </button>
+                          </div>
+                          <!-- / End Step Navigation -->
+                      
+                          <!-- Step 1 -->
+                          <section id="progress-form__panel-1" role="tabpanel" aria-labelledby="progress-form__tab-1" tabindex="0">
+                            
+                              <div class="mt-3 sm:mt-0 form__field">
+                                <label for="first-name">
+                                  <span data-required="true" aria-hidden="true"></span>
+                                </label>
+                                <input id="first-name" type="text" name="first-name" autocomplete="given-name" placeholder="Name* "required>
+                              </div>
+                            <div class="mt-3 form__field">
+                              <label for="email-address">
+                                <span data-required="true" aria-hidden="true"></span>
+                              </label>
+                              <input id="email-address" type="email" name="email-address" autocomplete="email" inputmode="email" placeholder="Email "required >
+                            </div>
+                      
+                            <!-- <div class="mt-1 form__field">
+                              <label class="form__choice-wrapper">
+                                <input id="email-newsletter" type="checkbox" name="email-newsletter" value="Yes" checked>
+                                <span>Yes, I would like to sign up to receive the newsletter</span>
+                              </label>
+                            </div> -->
+                            <div class="mt-3 sm:mt-0 form__field">
+                                <label for="last-name">
+                                  <span data-required="true" aria-hidden="true"></span>
+                                </label>
+                                <input id="last-name" type="text" name="last-name" autocomplete="family-name" placeholder="Company* "required>
+                              </div>
+                              <div class="sm:d-grid sm:grid-col-2 sm:mt-3">
+                                <div class="mt-3 sm:mt-0 form__field">
+                                        <label for="address-state">
+                                          <span data-required="true" aria-hidden="true"></span>
+                                        </label>
+                                        <select id="address-state" name="address-state" autocomplete="shipping address-level1" required>
+                                          <option value="" disabled selected>Code</option>
+                                          <option value="AL">Alabama</option>
+                                          <option value="AK">Alaska</option>
+                                          <option value="AZ">Arizona</option>
+                                          <option value="AK">Arkansas</option>
+                                          <option value="CA">California</option>
+                                          <option value="CO">Colorado</option>
+                                          <option value="CT">Connecticut</option>
+                                          <option value="DE">Delaware</option>
+                                          <option value="FL">Florida</option>
+                                          <option value="GA">Georgia</option>
+                                          <option value="HI">Hawaii</option>
+                                          <option value="ID">Idaho</option>
+                                          <option value="IL">Illinois</option>
+                                          <option value="IN">Indiana</option>
+                                          <option value="IA">Iowa</option>
+                                          <option value="KS">Kansas</option>
+                                          <option value="KY">Kentucky</option>
+                                          <option value="LA">Louisiana</option>
+                                          <option value="ME">Maine</option>
+                                          <option value="MD">Maryland</option>
+                                          <option value="MA">Massachusetts</option>
+                                          <option value="MI">Michigan</option>
+                                          <option value="MN">Minnesota</option>
+                                          <option value="MS">Mississippi</option>
+                                          <option value="MO">Missouri</option>
+                                          <option value="MT">Montana</option>
+                                          <option value="NE">Nebraska</option>
+                                          <option value="NV">Nevada</option>
+                                          <option value="NH">New Hampshire</option>
+                                          <option value="NJ">New Jersey</option>
+                                          <option value="NM">New Mexico</option>
+                                          <option value="NY">New York</option>
+                                          <option value="NC">North Carolina</option>
+                                          <option value="ND">North Dakota</option>
+                                          <option value="OH">Ohio</option>
+                                          <option value="OK">Oklahoma</option>
+                                          <option value="OR">Oregon</option>
+                                          <option value="PA">Pennsylvania</option>
+                                          <option value="RI">Rhode Island</option>
+                                          <option value="SC">South Carolina</option>
+                                          <option value="SD">South Dakota</option>
+                                          <option value="TN">Tennessee</option>
+                                          <option value="TX">Texas</option>
+                                          <option value="UT">Utah</option>
+                                          <option value="VT">Vermont</option>
+                                          <option value="VA">Virginia</option>
+                                          <option value="WA">Washington</option>
+                                          <option value="DC">Washington DC</option>
+                                          <option value="WV">West Virginia</option>
+                                          <option value="WI">Wisconsin</option>
+                                          <option value="WY">Wyoming</option>
+                                        </select>
+                                      </div>
+                        
+                                <div class="mt-3 sm:mt-0 form__field">
+                                  <label for="phone-number">
+                                      </label>
+                                      <input id="phone-number" type="tel" name="phone-number" autocomplete="tel" inputmode="tel" placeholder="Phone* ">
+                                </div>
+                              </div>
+                              <div class="mt-3 sm:mt-0 form__field">
+                                <label for="address-state">
+                                  <span data-required="true" aria-hidden="true"></span>
+                                </label>
+                                <select id="address-state" name="address-state" autocomplete="shipping address-level1" required>
+                                  <option value="" disabled selected>Accountant*</option>
+                                  <option value="AL">Alabama</option>
+                                  <option value="AK">Alaska</option>
+                                  <option value="AZ">Arizona</option>
+                                  <option value="AK">Arkansas</option>
+                                  <option value="CA">California</option>
+                                  <option value="CO">Colorado</option>
+                                  <option value="CT">Connecticut</option>
+                                  <option value="DE">Delaware</option>
+                                  <option value="FL">Florida</option>
+                                  <option value="GA">Georgia</option>
+                                  <option value="HI">Hawaii</option>
+                                  <option value="ID">Idaho</option>
+                                  <option value="IL">Illinois</option>
+                                  <option value="IN">Indiana</option>
+                                  <option value="IA">Iowa</option>
+                                  <option value="KS">Kansas</option>
+                                  <option value="KY">Kentucky</option>
+                                  <option value="LA">Louisiana</option>
+                                  <option value="ME">Maine</option>
+                                  <option value="MD">Maryland</option>
+                                  <option value="MA">Massachusetts</option>
+                                  <option value="MI">Michigan</option>
+                                  <option value="MN">Minnesota</option>
+                                  <option value="MS">Mississippi</option>
+                                  <option value="MO">Missouri</option>
+                                  <option value="MT">Montana</option>
+                                  <option value="NE">Nebraska</option>
+                                  <option value="NV">Nevada</option>
+                                  <option value="NH">New Hampshire</option>
+                                  <option value="NJ">New Jersey</option>
+                                  <option value="NM">New Mexico</option>
+                                  <option value="NY">New York</option>
+                                  <option value="NC">North Carolina</option>
+                                  <option value="ND">North Dakota</option>
+                                  <option value="OH">Ohio</option>
+                                  <option value="OK">Oklahoma</option>
+                                  <option value="OR">Oregon</option>
+                                  <option value="PA">Pennsylvania</option>
+                                  <option value="RI">Rhode Island</option>
+                                  <option value="SC">South Carolina</option>
+                                  <option value="SD">South Dakota</option>
+                                  <option value="TN">Tennessee</option>
+                                  <option value="TX">Texas</option>
+                                  <option value="UT">Utah</option>
+                                  <option value="VT">Vermont</option>
+                                  <option value="VA">Virginia</option>
+                                  <option value="WA">Washington</option>
+                                  <option value="DC">Washington DC</option>
+                                  <option value="WV">West Virginia</option>
+                                  <option value="WI">Wisconsin</option>
+                                  <option value="WY">Wyoming</option>
+                                </select>
+                              </div>
+                            <div class="d-flex align-items-center justify-center sm:justify-end mt-4 sm:mt-5">
+                              <button type="button" data-action="next">
+                                Continue
+                              </button>
+                            </div>
+                          </section>
+                          <!-- / End Step 1 -->
+                      
+                          <!-- Step 2 -->
+                          <section id="progress-form__panel-2" role="tabpanel" aria-labelledby="progress-form__tab-2" tabindex="0" hidden>
+                            <div class="mt-3 form__field">
+                              <label for="address">
+                                <span data-required="true" aria-hidden="true"></span>
+                              </label>
+                              <input id="address" type="text" name="address" autocomplete="shipping address-line1" placeholder="  Address*" required>
+                            </div>
+                      
+                            <div class="mt-3 form__field">
+                              <label for="address-2">
+                              </label>
+                              <input id="address-2" type="text" name="address-2" autocomplete="shipping address-line2" placeholder="  Apartment or suite*">
+                            </div>
+                      
+                            <div class="sm:d-grid sm:grid-col-3 sm:mt-3">
+                              <div class="mt-3 sm:mt-0 form__field">
+                                <label for="address-city">
+                                  <span data-required="true" aria-hidden="true"></span>
+                                </label>
+                                <input id="address-city" type="text" name="address-city" autocomplete="shipping address-level2" placeholder="  City*" required>
+                              </div>
+                      
+                              <div class="mt-3 sm:mt-0 form__field">
+                                <label for="address-state">
+                                  <span data-required="true" aria-hidden="true"></span>
+                                </label>
+                                <select id="address-state" name="address-state" autocomplete="shipping address-level1" required>
+                                  <option value="" disabled selected>State</option>
+                                  <option value="AL">Alabama</option>
+                                  <option value="AK">Alaska</option>
+                                  <option value="AZ">Arizona</option>
+                                  <option value="AK">Arkansas</option>
+                                  <option value="CA">California</option>
+                                  <option value="CO">Colorado</option>
+                                  <option value="CT">Connecticut</option>
+                                  <option value="DE">Delaware</option>
+                                  <option value="FL">Florida</option>
+                                  <option value="GA">Georgia</option>
+                                  <option value="HI">Hawaii</option>
+                                  <option value="ID">Idaho</option>
+                                  <option value="IL">Illinois</option>
+                                  <option value="IN">Indiana</option>
+                                  <option value="IA">Iowa</option>
+                                  <option value="KS">Kansas</option>
+                                  <option value="KY">Kentucky</option>
+                                  <option value="LA">Louisiana</option>
+                                  <option value="ME">Maine</option>
+                                  <option value="MD">Maryland</option>
+                                  <option value="MA">Massachusetts</option>
+                                  <option value="MI">Michigan</option>
+                                  <option value="MN">Minnesota</option>
+                                  <option value="MS">Mississippi</option>
+                                  <option value="MO">Missouri</option>
+                                  <option value="MT">Montana</option>
+                                  <option value="NE">Nebraska</option>
+                                  <option value="NV">Nevada</option>
+                                  <option value="NH">New Hampshire</option>
+                                  <option value="NJ">New Jersey</option>
+                                  <option value="NM">New Mexico</option>
+                                  <option value="NY">New York</option>
+                                  <option value="NC">North Carolina</option>
+                                  <option value="ND">North Dakota</option>
+                                  <option value="OH">Ohio</option>
+                                  <option value="OK">Oklahoma</option>
+                                  <option value="OR">Oregon</option>
+                                  <option value="PA">Pennsylvania</option>
+                                  <option value="RI">Rhode Island</option>
+                                  <option value="SC">South Carolina</option>
+                                  <option value="SD">South Dakota</option>
+                                  <option value="TN">Tennessee</option>
+                                  <option value="TX">Texas</option>
+                                  <option value="UT">Utah</option>
+                                  <option value="VT">Vermont</option>
+                                  <option value="VA">Virginia</option>
+                                  <option value="WA">Washington</option>
+                                  <option value="DC">Washington DC</option>
+                                  <option value="WV">West Virginia</option>
+                                  <option value="WI">Wisconsin</option>
+                                  <option value="WY">Wyoming</option>
+                                </select>
+                              </div>
+                      
+                              <div class="mt-3 sm:mt-0 form__field">
+                                <label for="address-zip">
+                                  <span data-required="true" aria-hidden="true"></span>
+                                </label>
+                                <input id="address-zip" type="text" name="address-zip" autocomplete="shipping postal-code" inputmode="numeric" placeholder=" Postal code*"required>
+                              </div>
+                            </div>
+                      
+                            <div class="d-flex flex-column-reverse sm:flex-row align-items-center justify-center sm:justify-end mt-4 sm:mt-5">
+                              <button type="button" class="mt-1 sm:mt-0 button--simple" data-action="prev">
+                                Back
+                              </button>
+                              <button type="button" data-action="next">
+                                Continue
+                              </button>
+                            </div>
+                          </section>
+                          <!-- / End Step 2 -->
+                      
+                          <!-- Step 3 -->
+                          <section id="progress-form__panel-3" role="tabpanel" aria-labelledby="progress-form__tab-3" tabindex="0" hidden>
+                            <div class="mt-3 form__field">
+                              <label for="product-satisfaction">
+                                How would you rate your level of satisfaction with the service you received?
+                                <span data-required="true" aria-hidden="true"></span>
+                              </label>
+                              <select id="product-satisfaction" name="product-satisfaction" required>
+                                <option value="" disabled selected>Please select</option>
+                                <option value="Highly satisfied">Highly satisfied</option>
+                                <option value="Very satisfied">Very satisfied</option>
+                                <option value="Satisfied">Satisfied</option>
+                                <option value="Very dissatisfied">Very dissatisfied</option>
+                                <option value="Highly dissatisfied">Highly dissatisfied</option>
+                              </select>
+                            </div>
+                            <div class="mt-3 form__field">
+                              <label for="product-recommendation">
+                                How likely are you to recommend our products to friends or family?
+                                <span data-required="true" aria-hidden="true"></span>
+                              </label>
+                              <select id="product-recommendation" name="product-recommendation" required>
+                                <option value="" disabled selected>Please select</option>
+                                <option value="Highly likely">Highly likely</option>
+                                <option value="Very likely">Very likely</option>
+                                <option value="Likely">Satisfied</option>
+                                <option value="Very unlikely">Very unlikely</option>
+                                <option value="Highly unlikely">Highly unlikely</option>
+                              </select>
+                            </div>
+                      
+                            <fieldset id="product-purchase" class="mt-3 form__field">
+                              <legend>
+                                Which of the following products have you purchased in the past 6 months? Please check all that apply.
+                              </legend>
+                              <label class="form__choice-wrapper">
+                                <input type="checkbox" name="product-purchase" value="A">
+                                <span>Product A</span>
+                              </label>
+                              <label class="form__choice-wrapper">
+                                <input type="checkbox" name="product-purchase" value="B">
+                                <span>Product B</span>
+                              </label>
+                              <label class="form__choice-wrapper">
+                                <input type="checkbox" name="product-purchase" value="C">
+                                <span>Product C</span>
+                              </label>
+                            </fieldset>
+                      
+                            <div class="mt-3 form__field">
+                              <label for="product-feedback">
+                                Do you have any additional feedback or comments about our products?
+                              </label>
+                              <textarea id="product-feedback" name="product-feedback" rows="5"></textarea>
+                            </div>
+                      
+                            <div class="d-flex flex-column-reverse sm:flex-row align-items-center justify-center sm:justify-end mt-4 sm:mt-5">
+                              <button type="button" class="mt-1 sm:mt-0 button--simple" data-action="prev">
+                                Back
+                              </button>
+                              <button type="submit">
+                                Submit
+                              </button>
+                            </div>
+                          </section>
+                          <!-- / End Step 3 -->
+                      
+                          <!-- Thank You -->
+                          <!-- <section id="progress-form__thank-you" hidden>
+                            <p>Thank you for your submission!</p>
+                            <p>We appreciate you contacting us. One of our team members will get back to you very&nbsp;soon.</p>
+                          </section> -->
+                          <!-- / End Thank You -->
+                      
+                        </form>
+                        <!-- / End Progress Form -->
+                      </div>
+                </div>
+            </div>
+        
+    </section>
+
+
+
+    <!-- ******** feature section ************ -->
+	
+    <section class="feature-cstm">
+        <div class="container">
+            <h2>QuickBooks Hosting on a Cloud Desktop</h2>
+            <h4>Now with Super-Fast SSD Storage</h4>
+            <div class="feature-inr">
+                <h3>Extremely User Friendly</h3>
+                <div class="feature-inr-cstm">
+                    <div class="feature-inr-box">
+                        <img src="img/computer.png">
+                        <h2>Works just like your physical desktop</h2>
+                        <p>Get the same experience as using QuickBooks on your physical desktop. We are unique in offering our customers a choice of Windows 7, 8, 10 or 11 look-and-feel on their Cloud Desktop.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/user.png">
+                        <h2>Multiuser access from all popular devices</h2>
+                        <p>You can access QuickBooks from your home, office, or even on-the-go. It is accessible from Mac, PC, Chromebooks, Linux, Android, and iOS devices. Keep your accounts up-to-date from everywhere!</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/tick.png">
+                        <h2>Host All QuickBooks Desktop Versions</h2>
+                        <p>Host QuickBooks Pro, QuickBooks Premier, QuickBooks Enterprise, QuickBooks Accountant, QuickBooks Pro Plus, and QuickBooks Premier Plus for the latest year and the prior three-year versions.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/folder.png">
+                        <h2>Works with all local devices</h2>
+                        <p>Need to print to a local printer from your cloud-based QuickBooks software? You can easily connect your printer and other external devices such as scanners, storage, and multiple monitors.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-inr">
+                <h3>Inclusive of All the Features</h3>
+                <div class="feature-inr-cstm">
+                    <div class="feature-inr-box">
+                        <img src="img/plug.png">
+                        <h2>Pre-installed free applications and tools</h2>
+                        <p>Your QuickBooks Cloud Desktop has pre-installed free applications: IE, Firefox, Chrome, Windows Media Player, Adobe Acrobat Reader, Remote Desktop, MS Paint, Notepad, Notes, Open Office.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/check.png">
+                        <h2>Apps that integrate with QuickBooks</h2>
+                        <p>You can install your own software subscriptions that integrate with QuickBooks: Bill.com, Expensify, TSheets. Unlike competitors, we do not charge extra for hosting such additional applications.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/cloud.png">
+                        <h2>Add Microsoft 365 Apps for enterprise</h2>
+                        <p>Microsoft 365 Apps for enterprise includes Word, PowerPoint, Excel, Outlook, OneNote, Publisher, Access, Teams, 1 TB space/user on OneDrive for Business.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/lock.png">
+                        <h2>Secure data connection with SSL</h2>
+                        <p>Your data connection is safe with "Secure Sockets Layer" (SSL) certification. Whenever you connect to our Cloud Desktop with QuickBooks, all your details are encrypted in a safe environment.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-inr">
+                <h3>Quality Service at Low Price</h3>
+                <div class="feature-inr-cstm">
+                    <div class="feature-inr-box">
+                        <img src="img/dollar.png">
+                        <h2>Competitive prices in the market</h2>
+                        <p>We have always been known in the industry for high quality service at low prices. Our mission is to proliferate the cloud business among the masses, and our low pricing reflects just that.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/chart.png">
+                        <h2>Experienced player in QuickBooks hosting</h2>
+                        <p>Since a decade, we have hosted accounting and tax applications such as QuickBooks, Peachtree/Sage, and Drake on our Cloud Desktop. We understand the needs of accountants.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/bulb.png">
+                        <h2>Intuit authorized host for QuickBooks</h2>
+                        <p>Apps4Rent is an authorized standard host for QuickBooks. We are authorized to resell licenses under the QuickBooks Solution Provider Program.</p>
+                    </div>
+                    <div class="feature-inr-box">
+                        <img src="img/earth.png">
+                        <h2>Over 10,000 customers served</h2>
+                        <p>We have served over 10,000 customers, including all kinds of businesses, over the last 15 years across more than 90 countries. We are not just any other cloud hosting company, we are Apps4Rent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******** hosting section ************ -->
+    <section class="hosting-cstm">
+        <div class="container">
+            <div class="hosting-inr">
+                <div class="hosting-left">
+                    <img src="img/hosting.png">
+                </div>
+                <div class="hosting-right">
+                    <h2>QuickBooks Cloud Hosting: Access Anytime, Anywhere</h2>
+                    <h3>Modern Professionals Like You Deserve Efficient Tech Solutions for Enhanced Productivity</h3>
+                    <p>QuickBooks hosting lets you access your QuickBooks software from a cloud server, where all your files and data are safely stored and operated. With a unique username and password, you can log in to your remote desktop from anywhere,
+                        access your data, and use the software just like you would from a local desktop. Enable your fellow team members to collaborate and work together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******** version section ************ -->
+    <section class="version-cstm">
+        <div class="container">
+            <h2>Which Versions of QuickBooks Do We Host?</h2>
+            <h3>Cloud Servers can Accommodate All QuickBooks Desktop Versions</h3>
+            <p>Host all versions and editions of Windows-based QuickBooks program in a secure, multi-user cloud environment. Whether you are using the US, Canada, or the UK edition of QB Enterprise, Premier, Pro, or POS, you can get customised, affordable
+                monthly, half-annually, and annual QuickBooks hosting plans as per your specific requirements.</p>
+            <div class="version-inr">
+                <a href="#" class="version-box">
+                    <h3>QuickBooks Pro Hosting</h3>
+                    <p>QuickBooks Pro Hosting allows users to run operations remotely. It is Ideal for small businesses and accounting firms.</p>
+                </a>
+                <a href="#" class="version-box">
+                    <h3>QuickBooks Premier Hosting</h3>
+                    <p>Experience smart, cloud-based QB Premier with our SSAE-18 Type II (SOC-2) certified data centers.</p>
+                </a>
+                <a href="#" class="version-box">
+                    <h3>QuickBooks Enterprise Hosting</h3>
+                    <p>Hosting QuickBooks Enterprise lets you take advantage of countless benefits with 24×7 support.</p>
+                </a>
+                <a href="#" class="version-box">
+                    <h3>QuickBooks POS Hosting</h3>
+                    <p>Hosted POS solutions offer maximum freedom and flexibility to help organize your retail business.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******** pricing section ************ -->
+    <section class="pricing-cstm">
+        <div class="container">
+            <h2>QuickBooks Hosting Pricing & Plans</h2>
+			<div class="button_top">
+			
+			  <div class="button_too">
+			    <ul>
+				   <li>SHARED</li>
+				   <li>DEDICATED</li>
+			    </ul>
+			  
+			  </div>
+			   <div class="right_too">
+			     <ul>
+				    <li><p>Monthly</p><button><label class="switch"><input type="checkbox" checked=""><span class="slider round"></span></label></button><p>Annually</p><span>(save <b>10%</b> more)</span></li>
+				 </ul>
+			  </div>
+			
+			</div>
+			<div class="box_bottom">
+			
+			   <div class="bookas">
+  			       <div class="bookas one">
+                       <h2>Started</h2>
+					   <span>$33<p><b>$36</b> monthly </p> </span>
+					   <button type="button" onclick="alert('Hello world!')">Get Free Trial now</button>
+					    <ul>
+						  <p>What you'll get</p>
+					      <li>1 user</li>
+					      <li>$30 on Additional User</li>
+					      <li>5GB strong</li>
+					      <li>For one application</li>
+					   </ul>
+				   </div>
+  			       <div class="bookas to">
+                    <h2>Started</h2>
+					   <span>$33<p><b>$36</b> monthly </p> </span>
+					   <button type="button" onclick="alert('Hello world!')">Get Free Trial now</button>
+					    <ul>
+						  <p>What you'll get</p>
+					      <li>1 user</li>
+					      <li>$30 on Additional User</li>
+					      <li>5GB strong</li>
+					      <li>For one application</li>
+					   </ul>
+
+					   </div>
+					   
+					   
+  			       <div class="bookas three">  
+				       <h2>Started</h2>
+					   <span>$33<p><b>$36</b> monthly </p> </span>
+					   <button type="button" onclick="alert('Hello world!')">Get Free Trial now</button>
+					    <ul>
+						  <p>What you'll get</p>
+					      <li>1 user</li>
+					      <li>$30 on Additional User</li>
+					      <li>5GB strong</li>
+					      <li>For one application</li>
+					   </ul>
+				   
+				   </div>
+			    </div>
+			   <span class="text">Explore More for Pricing </span>
+			</div>
+        </div>
+    </section>
+
+
+    <!-- ******** faq section ************ -->
+    <section class="faq-cstm">
+        <div class="container">
+            <h2>QuickBooks Hosting FAQs</h2>
+            <div class="faq-inr">
+                <h3>What is QuickBooks Hosting?</h3>
+                <p>Hosting QuickBooks means configuring license copies of QuickBooks Desktop software on remote servers for ease of accessibility and use. QuickBooks desktop cloud hosting services allow multiple users to access the hosted application with
+                    the same feel and features of the desktop version with added compatibility, scalability, flexibility, and security benefits of the cloud.</p>
+            </div>
+            <div class="faq-inr">
+                <h3>Can I host my own QuickBooks?</h3>
+                <p>Yes, you can host your own QuickBooks on Sagenext Cloud. All you need to do is choose between shared and dedicated QuickBooks dedicated server hosting plans and share your application's license number and product code with Sagenext to
+                    get started with cloud.</p>
+            </div>
+            <div class="faq-inr">
+                <h3>How much does it cost to host QuickBooks?</h3>
+                <p>It typically costs between $30 and $75 per month to host QuickBooks. Lower cost QuickBooks hosting services typically use shared servers, while higher prices come with additional features, such as 2-Factor Authentication. At Sagenext QuickBooks
+                    cloud hosting service starts at just $33 per month, including shared servers and additional security options.</p>
+            </div>
+            <div class="faq-inr">
+                <h3>What are the requirements to host QuickBooks on the cloud?</h3>
+                <p>Hosting QuickBooks requires you to share the license or subscription details of the QuickBooks Desktop application. In case you don't have the license, you can purchase it directly from Sagenext as we are an Intuit Authorized QuickBooks
+                    Solution Provider.</p>
+            </div>
+            <div class="faq-inr">
+                <h3>Which company is best for QuickBooks hosting services?</h3>
+                <p>While there are quite a few <a href="#">QuickBooks hosting service providers,</a> Sagenext has earned a name for itself for its state-of-the-art cloud platform, data security, and 24x7 technical support for accounting software hosting.</p>
+            </div>
+		
+        </div>
+    </section>
+
+    
+    <!-- ******* cloud section *********** -->
+	
+    <section class="cloud-cstm desktop">
+        <div class="container">
+            <h2>3 Simple Steps to Host QuickBooks Desktop on Cloud</h2>
+            <h3>The Sagenext Proven Process</h3>
+            <div class="cloud-top">
+                <div class="cloud-inr-top">
+                    <h2>Pick the Right Plan</h2>
+                    <p>Talk to a representative for a suitable QuickBooks hosting service according to your requirements.</p>
+                    </div>
+            </div>
+            <div class="cloud-inr">
+                <div class="cloud-middle">
+                    <div class="cloud-inr-circular">
+                        <div class="rotate-first">
+                       <div class="cloud-inr-circle first">
+                        <h1>03  <span>STEP</span> </h1>
+                       </div>
+                    </div>
+                       <div class="rotate-second">
+                       <div class="cloud-inr-circle second">
+                        <h1>01 <span>STEP</span></h1>
+                       </div>
+                    </div>
+                       <div class="rotate-third">
+                       <div class="cloud-inr-circle third">
+                        <h1>02 <span>STEP</span></h1>
+                    </div>
+                </div>
+                    </div>
+            </div>
+            
+         </div>
+         <div class="cloud-inner">
+            <div class="cloud-inr-left">
+                <h2>Cloud Setup</h2>
+                <p>As per your users, RAM and storage requirements, you can customize your QuickBooks cloud desktop. Get your cloud based QuickBooks setup done within 5 hours.</p>
+                </div>
+                <div class="cloud-inr-right">
+                    <h2>Share QuickBooks Details</h2>
+                    <p>Share your QuickBooks license to begin your cloud hosting services. If you don't have it, you can buy it from us.</p>
+                </div>  
+         </div>
+        </div>
+
+    </section>
+	
+	<section class="cloud-cstm mobile">
+        <div class="container">
+            <h2>3 Simple Steps to Host QuickBooks Desktop on Cloud</h2>
+            <h3>The Sagenext Proven Process</h3>
+            <div class="cloud-top">
+                <div class="cloud-inr-top">
+                    <h2>Pick the Right Plan</h2>
+                    <p>Talk to a representative for a suitable QuickBooks hosting service according to your requirements.</p>
+                    </div>
+            </div>
+            <div class="cloud-inr">
+                <div class="cloud-middle">
+                    <div class="cloud-inr-circular">
+                        
+                       <div class="rotate-second one">
+                       <div class="cloud-inr-circle second">
+                        <h1>01<span>STEP</span></h1>
+                       </div>
+                    </div>
+<div class="cloud-inr-top">
+                    <h2>Cloud Setup</h2>
+                    <p>As per your users, RAM and storage requirements, you can customize your QuickBooks cloud desktop. Get your cloud based QuickBooks setup done within 5 hours.</p>
+                    </div><div class="rotate-second to">
+  
+                       <div class="cloud-inr-circle second">
+                        <h1>02<span>STEP</span></h1>
+                       </div>
+                    </div>
+<div class="cloud-inr-top">
+                    <h2>Share QuickBooks Details</h2>
+                    <p>Share your QuickBooks license to begin your cloud hosting services. If you don't have it, you can buy it from us.</p>
+                    </div><div class="rotate-second thre">
+                       <div class="cloud-inr-circle second">
+                        <h1>03<span>STEP</span></h1>
+                       </div>
+                    </div>
+                       
+                    <div>
+                       
+                    </div>
+</div>
+            </div>
+            
+         </div>
+         
+        </div>
+
+    </section>
+
+    <!-- ******** footer ************ -->
+    <footer>
+        <div class="ftr-top">
+            <div class="container">
+                <div class="newsletter">
+                    <div class="newsletter-left">
+                        <h2>Our Headquarters</h2>
+                        <p>enteryoursiteLLC 3540 Wheeler RD STE 109
+                            <br> Wheeler Executive Center Augusta GA 30909 (USA)</p>
+                    </div>
+                    <div class="newsletter-right">
+                        <h2>Join Our Newsletter</h2>
+                        <form>
+                            <input type="email" placeholder="enter your mail">
+                            <button type="submit">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="ftr-menu">
+                    <div class="ftr-menu-link">
+                        <h2>QuickBooks</h2>
+                        <ul>
+                            <li><a href="#">QuickBooks Hosting</a></li>
+                            <li><a href="#">QuickBooks Pro Hosting</a></li>
+                            <li><a href="#">QuickBooks Premier Hosting</a></li>
+                            <li><a href="#">QuickBooks Enterprise Hosting</a></li>
+                            <li><a href="#">QuickBooks POS Hosting</a></li>
+                            <li><a href="#">QuickBooks Add-ons Hosting</a></li>
+                            <li><a href="#">Buy QuickBooks</a></li>
+                        </ul>
+                    </div>
+                    <div class="ftr-menu-link">
+                        <h2>Tax & Accounting</h2>
+                        <ul>
+                            <li><a href="#">Tax Software Hosting</a></li>
+                            <li><a href="#">Drake Hosting</a></li>
+                            <li><a href="#">UltraTax Hosting</a></li>
+                            <li><a href="#">Lacerte Hosting</a></li>
+                            <li><a href="#">ProSeries Tax Software Hosting</a></li>
+                            <li><a href="#">TaxWise Hosting</a></li>
+                        </ul>
+                    </div>
+                    <div class="ftr-menu-link">
+                        <h2>Resources</h2>
+                        <ul>
+                            <li><a href="#">Data Security</a></li>
+                            <li><a href="#">User Acceptance Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Data Centers</a></li>
+                            <li><a href="#">Service Level Agreement</a></li>
+                        </ul>
+                    </div>
+                    <div class="ftr-menu-link">
+                        <h2>Get to know us</h2>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">HIPAA Compliance</a></li>
+                            <li><a href="#">Vision and mission</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ftr-menu-lst">
+                    <p> LLC is an independent cloud hosting company that hosts legally licensed QuickBooks, and other tax and accounting applications.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ftr-copyright">
+            <div class="container">
+                <div class="copyright-inner">
+                    <p>Copyright © 2024 enteryoursite LLC. All Rights Reserved.</p>
+                    <p>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="ftr-payment">
+            <div class="container">
+                <img src="img/payment.png">
+                <div>
+                </div>
+    </footer>
+
+
+</body>
+</html>
